@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Dashboard</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>I am Sujal kansagra</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+            </header>
+
+            <!-- Cards Section -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>$12,345</p>
+                </div>
+                <div class="card">
+                    <h3>Tasks Completed</h3>
+                    <p>56</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Issues</h3>
+                    <p>12</p>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts">
+                <div class="chart">
+                    <h3>Monthly Sales</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart">
+                    <h3>User Activity</h3>
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
